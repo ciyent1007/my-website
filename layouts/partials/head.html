@@ -5,7 +5,7 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
 <!-- Favicon -->
-<link rel="icon" type="image/jpeg" href="{{ "images/logo.jpeg" | relURL }}">
+<link rel="icon" type="image/svg+xml" href="{{ "images/logo.svg" | relURL }}">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
   "@type": "ITUtility",
   "name": "CIYENT TECHNOLOGIES",
   "url": "{{ .Site.BaseURL }}",
-  "logo": "{{ "images/logo.jpeg" | absURL }}",
+  "logo": "{{ "images/logo.svg" | absURL }}",
   "description": "{{ .Site.Params.description }}",
   "contactPoint": {
     "@type": "ContactPoint",

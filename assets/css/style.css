@@ -127,7 +127,7 @@ ul { list-style: none; }
 .nav-container { display: flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 84px; }
 .logo-link { display: inline-flex; align-items: center; flex-shrink: 0; }
 .site-logo {
-    height: 72px;
+    height: 84px;
     width: auto;
     display: block;
     transition: var(--transition);
@@ -661,7 +661,7 @@ ul { list-style: none; }
     gap: 2.5rem;
     padding-bottom: 3rem;
 }
-.footer-brand .footer-logo { height: 56px; width: auto; display: block; margin-bottom: 1.25rem; }
+.footer-brand .footer-logo { height: 60px; width: auto; display: block; margin-bottom: 1.25rem; }
 .footer-brand p { font-size: 0.93rem; color: #94a3b8; margin-bottom: 0.75rem; }
 .footer-col h4 {
     color: var(--white);
@@ -729,7 +729,7 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 768px) {
-    .site-logo { height: 60px; }
+    .site-logo { height: 72px; }
     .nav-container { min-height: 72px; }
     .mobile-menu-toggle { display: flex; }
     .main-nav {
