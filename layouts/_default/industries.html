@@ -1,0 +1,110 @@
+{{ define "main" }}
+{{ partial "page-hero" (dict
+    "title" "Industries We Serve"
+    "eyebrow" "Who We Help"
+    "subtitle" "Every sector runs on technology differently. We tailor our deployments, security, and support to the operational realities of your industry."
+) }}
+
+<!-- Industry cards -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Tailored Technology</span>
+            <h2>Solutions Built Around Your Industry</h2>
+            <p>We combine deep technical expertise with an understanding of how each sector works — so your IT supports your goals instead of slowing you down.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card industry-card reveal">
+                <span class="card-icon">{{ partial "icon" "pulse" }}</span>
+                <h3>Healthcare & Hospitals</h3>
+                <p>Reliable, secure IT for patient-facing and clinical operations where uptime directly affects care.</p>
+                <div class="industry-help">
+                    <h4>How we help</h4>
+                    <ul>
+                        <li>HIPAA-aware security & access controls</li>
+                        <li>Reliable HIS/PMS network infrastructure</li>
+                        <li>24x7 support & backup for critical systems</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card industry-card reveal">
+                <span class="card-icon">{{ partial "icon" "book" }}</span>
+                <h3>Education & Training</h3>
+                <p>Technology that keeps campuses, labs, and training centers connected and protected.</p>
+                <div class="industry-help">
+                    <h4>How we help</h4>
+                    <ul>
+                        <li>Computer labs & smart classroom networks</li>
+                        <li>Secure Wi-Fi for students and staff</li>
+                        <li>IT training & internship programs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card industry-card reveal">
+                <span class="card-icon">{{ partial "icon" "building" }}</span>
+                <h3>Corporate & SMEs</h3>
+                <p>Enterprise-grade infrastructure and support scaled for growing businesses.</p>
+                <div class="industry-help">
+                    <h4>How we help</h4>
+                    <ul>
+                        <li>Servers, Active Directory & Microsoft 365</li>
+                        <li>Firewalls, VPNs & secure remote access</li>
+                        <li>AMC / CMC managed support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card industry-card reveal">
+                <span class="card-icon">{{ partial "icon" "bag" }}</span>
+                <h3>Retail & Businesses</h3>
+                <p>Fast, reliable systems for point-of-sale, billing, and customer-facing operations.</p>
+                <div class="industry-help">
+                    <h4>How we help</h4>
+                    <ul>
+                        <li>POS & billing network setup</li>
+                        <li>CCTV & IP surveillance</li>
+                        <li>Backup & disaster recovery</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card industry-card reveal">
+                <span class="card-icon">{{ partial "icon" "growth" }}</span>
+                <h3>Startups & Professional Services</h3>
+                <p>Practical, cost-effective IT that scales as you grow without adding overhead.</p>
+                <div class="industry-help">
+                    <h4>How we help</h4>
+                    <ul>
+                        <li>Cloud-first setup (Microsoft 365 / Google Workspace)</li>
+                        <li>Flexible remote & onsite support</li>
+                        <li>IT consultancy & project management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card industry-card reveal">
+                <span class="card-icon">{{ partial "icon" "briefcase" }}</span>
+                <h3>Professional Services</h3>
+                <p>Dependable, secure environments for firms where data privacy and reliability are non-negotiable.</p>
+                <div class="industry-help">
+                    <h4>How we help</h4>
+                    <ul>
+                        <li>Email security & compliance controls</li>
+                        <li>Endpoint & data protection</li>
+                        <li>Resident engineer & priority support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA band -->
+<section class="cta-band">
+    <div class="container">
+        <h2>Let's talk about your industry</h2>
+        <p>Share a little about your business — we'll show you how our services map to what you need.</p>
+        <div class="btn-row">
+            <a href="{{ "contact/" | relURL }}" class="btn btn-light btn-lg">Request a Consultation</a>
+            <a href="{{ "services/" | relURL }}" class="btn btn-ghost-light btn-lg">View Our Services</a>
+        </div>
+    </div>
+</section>
+{{ end }}

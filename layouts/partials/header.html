@@ -1,16 +1,27 @@
 <header class="site-header">
     <div class="container nav-container">
-        <a href="{{ "/" | relURL }}" class="logo"><strong>CIYENT</strong> TECHNOLOGIES</a>
-        <nav class="main-nav">
+        <a href="{{ "/" | relURL }}" class="logo-link" aria-label="CIYENT TECHNOLOGIES — Home">
+            <img src="{{ "images/logo.jpeg" | relURL }}" alt="CIYENT TECHNOLOGIES" class="site-logo" width="1000" height="1000">
+        </a>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
             <ul class="nav-links">
-                <li><a href="{{ "/" | relURL }}">Home</a></li>
-                <li><a href="{{ "about/" | relURL }}">About Us</a></li>
-                <li><a href="{{ "services/" | relURL }}">Services</a></li>
-                <li><a href="{{ "training/" | relURL }}">IT Training</a></li>
-                <li><a href="{{ "industries/" | relURL }}">Industries</a></li>
+                {{ $current := .RelPermalink }}
+                <li><a href="{{ "/" | relURL }}" class="nav-link{{ if .IsHome }} is-active{{ end }}">Home</a></li>
+                {{ range $item := slice
+                    (dict "label" "About Us" "path" "about/")
+                    (dict "label" "Services" "path" "services/")
+                    (dict "label" "IT Training" "path" "training/")
+                    (dict "label" "Industries" "path" "industries/")
+                }}
+                <li><a href="{{ $item.path | relURL }}" class="nav-link{{ if eq $current (printf "/%s" $item.path) }} is-active{{ end }}">{{ $item.label }}</a></li>
+                {{ end }}
             </ul>
-            <a href="{{ "contact/" | relURL }}" class="btn btn-primary">Request a Consultation</a>
+            <a href="{{ "contact/" | relURL }}" class="btn btn-primary nav-cta">Request a Consultation</a>
         </nav>
-        <button class="mobile-menu-toggle" aria-label="Toggle Menu">☰</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="main-nav">
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+        </button>
     </div>
 </header>

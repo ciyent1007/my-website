@@ -1,0 +1,167 @@
+{{ define "main" }}
+{{ partial "page-hero" (dict
+    "title" "Enterprise IT Services & Managed Solutions"
+    "eyebrow" "Our Services"
+    "subtitle" "End-to-end IT infrastructure, network security, cloud, and managed support services — designed, deployed, and supported by one dedicated team."
+) }}
+
+<!-- Overview -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">What We Do</span>
+            <h2>Complete Lifecycle IT Management</h2>
+            <p>We cover every layer of your technology environment — from infrastructure design and deployment to security, cloud, and ongoing day-to-day support.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 1. Infrastructure & Servers -->
+<section class="section">
+    <div class="container">
+        <div class="service-category">
+            <div class="service-category-info reveal">
+                <span class="card-icon">{{ partial "icon" "server" }}</span>
+                <h2>Infrastructure & Server Management</h2>
+                <p class="lead">A resilient, scalable foundation for your business — designed and deployed to support growth and minimize downtime.</p>
+                <ul class="offering-list">
+                    <li>IT Infrastructure Design & Deployment</li>
+                    <li>Server Installation & Management</li>
+                    <li>Windows Server, Active Directory, DNS & DHCP</li>
+                    <li>Virtualization (VMware / Hyper-V / Proxmox)</li>
+                    <li>Structured Cabling & Rack Setup</li>
+                    <li>Hardware Supply & Sourcing</li>
+                </ul>
+                <div class="benefit-line">{{ partial "icon" "check-circle" }} A solid server and network backbone that keeps your business online and productive.</div>
+                <div class="cta-row">
+                    <a href="{{ "contact/" | relURL }}" class="btn btn-primary">Request a Consultation</a>
+                    <a href="{{ "contact/" | relURL }}" class="btn btn-outline">Get a Free Assessment</a>
+                </div>
+            </div>
+            <div class="service-visual reveal">
+                <span class="card-icon">{{ partial "icon" "cpu" }}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. Networking & Security -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="service-category">
+            <div class="service-visual reveal">
+                <span class="card-icon">{{ partial "icon" "shield" }}</span>
+            </div>
+            <div class="service-category-info reveal">
+                <span class="card-icon">{{ partial "icon" "network" }}</span>
+                <h2>Networking & Cyber Security</h2>
+                <p class="lead">Secure, high-performance networks protected by enterprise-grade firewalls, VPNs, and layered security controls.</p>
+                <ul class="offering-list">
+                    <li>Network Design & Implementation</li>
+                    <li>Cisco Switching & Routing</li>
+                    <li>Firewall Deployments (FortiGate, Sophos, SonicWall)</li>
+                    <li>VPN (IPSec / SSL) & Wi-Fi Solutions</li>
+                    <li>Endpoint & Email Security</li>
+                    <li>IT Audit & Security Assessment</li>
+                </ul>
+                <div class="benefit-line">{{ partial "icon" "check-circle" }} Proactive protection that keeps your data, users, and infrastructure safe.</div>
+                <div class="cta-row">
+                    <a href="{{ "contact/" | relURL }}" class="btn btn-primary">Request a Consultation</a>
+                    <a href="{{ "contact/" | relURL }}" class="btn btn-outline">Book a Security Audit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. Cloud, Backup & Collaboration -->
+<section class="section">
+    <div class="container">
+        <div class="service-category">
+            <div class="service-category-info reveal">
+                <span class="card-icon">{{ partial "icon" "cloud" }}</span>
+                <h2>Cloud, Backup & Collaboration</h2>
+                <p class="lead">Modern productivity tools and resilient data protection that let your team work from anywhere, safely.</p>
+                <ul class="offering-list">
+                    <li>Microsoft 365 & Google Workspace</li>
+                    <li>Cloud Solutions (Azure / AWS)</li>
+                    <li>Data Backup & Disaster Recovery</li>
+                    <li>IP-PBX & VoIP Solutions</li>
+                    <li>Email Security & Hygiene</li>
+                    <li>Cloud Migration & Management</li>
+                </ul>
+                <div class="benefit-line">{{ partial "icon" "check-circle" }} Always-on productivity with automated backups and fast recovery.</div>
+                <div class="cta-row">
+                    <a href="{{ "contact/" | relURL }}" class="btn btn-primary">Request a Consultation</a>
+                    <a href="{{ "contact/" | relURL }}" class="btn btn-outline">Discuss Your Setup</a>
+                </div>
+            </div>
+            <div class="service-visual reveal">
+                <span class="card-icon">{{ partial "icon" "backup" }}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Managed Support, AMC & CMC -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="service-category">
+            <div class="service-visual reveal">
+                <span class="card-icon">{{ partial "icon" "headset" }}</span>
+            </div>
+            <div class="service-category-info reveal">
+                <span class="card-icon">{{ partial "icon" "tool" }}</span>
+                <h2>Managed Support, AMC / CMC & Licensing</h2>
+                <p class="lead">Your dedicated IT department — proactive maintenance, fast response, and dependable daily support.</p>
+                <ul class="offering-list">
+                    <li>Remote & Onsite IT Support</li>
+                    <li>AMC / CMC / Resident Engineer</li>
+                    <li>Preventive Maintenance & Health Checkups</li>
+                    <li>IT Consultancy & Project Management</li>
+                    <li>Hardware Supply & Software Licensing</li>
+                    <li>Breakdown Support with Priority SLA</li>
+                </ul>
+                <div class="benefit-line">{{ partial "icon" "check-circle" }} Reduce downtime, improve performance, and control IT costs.</div>
+                <div class="cta-row">
+                    <a href="{{ "contact/" | relURL }}" class="btn btn-primary">Get an AMC Quote</a>
+                    <a href="{{ "contact/" | relURL }}" class="btn btn-outline">Talk to Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AMC Spotlight -->
+<section class="amc-banner">
+    <div class="container amc-flex">
+        <div class="amc-info reveal">
+            <span class="eyebrow">Managed Support</span>
+            <h2>Annual & Comprehensive Maintenance Contracts</h2>
+            <p>Keep your operations running smoothly with guaranteed SLA responses and routine maintenance — preventive care before problems interrupt your business.</p>
+            <ul class="check-list">
+                <li>Preventive Maintenance & Regular Health Checkups</li>
+                <li>Hardware & Software Support</li>
+                <li>Breakdown Support with Priority SLA</li>
+                <li>Cost Effective & Hassle Free</li>
+            </ul>
+        </div>
+        <div class="amc-action reveal">
+            <div class="highlight-badge">REDUCE DOWNTIME • IMPROVE PERFORMANCE • SAVE COSTS</div>
+            <a href="{{ "contact/" | relURL }}" class="btn btn-light btn-lg">Get an AMC Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA band -->
+<section class="cta-band">
+    <div class="container">
+        <h2>Not sure which service fits your business?</h2>
+        <p>Describe your IT setup or challenge — we'll recommend the right services and a clear plan.</p>
+        <div class="btn-row">
+            <a href="{{ "contact/" | relURL }}" class="btn btn-light btn-lg">Request a Consultation</a>
+            <a href="{{ "training/" | relURL }}" class="btn btn-ghost-light btn-lg">Explore IT Training</a>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,13 +1,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0056b3">
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | CIYENT TECHNOLOGIES{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="{{ "images/logo.jpeg" | relURL }}">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <!-- SEO & Open Graph -->
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="CIYENT TECHNOLOGIES">
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- CSS -->
@@ -22,11 +32,13 @@
   "@type": "ITUtility",
   "name": "CIYENT TECHNOLOGIES",
   "url": "{{ .Site.BaseURL }}",
-  "logo": "{{ .Site.BaseURL }}/images/logo.png",
+  "logo": "{{ "images/logo.jpeg" | absURL }}",
+  "description": "{{ .Site.Params.description }}",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "{{ .Site.Params.phone }}",
-    "contactType": "customer service"
+    "contactType": "customer service",
+    "areaServed": "Ghaziabad & Delhi NCR, India"
   }
 }
 </script>

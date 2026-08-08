@@ -1,0 +1,210 @@
+{{ define "main" }}
+{{ partial "page-hero" (dict
+    "title" "Professional IT Training & Career Internships"
+    "eyebrow" "Training & Careers"
+    "subtitle" "Job-oriented, hands-on training led by industry experts — built for engineering students, IT administrators, and corporate teams who want real, practical skills."
+) }}
+
+<!-- Training Programs -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Choose Your Path</span>
+            <h2>Training Programs Across 8 Domains</h2>
+            <p>Every program is designed around real enterprise infrastructure — so you learn the tools and tasks that matter on the job.</p>
+        </div>
+        <div class="grid grid-4">
+            <div class="card program-card reveal">
+                <span class="card-icon">{{ partial "icon" "network" }}</span>
+                <h3>Networking & CCNA</h3>
+                <p>Build enterprise networks from the ground up.</p>
+                <ul class="learn-list">
+                    <li>Switching & Routing</li>
+                    <li>VLANs, STP, OSPF & BGP</li>
+                    <li>Enterprise Networking</li>
+                </ul>
+                <div class="program-tags"><span class="tag">CCNA</span><span class="tag">Routing</span><span class="tag">Switching</span></div>
+            </div>
+            <div class="card program-card reveal">
+                <span class="card-icon">{{ partial "icon" "shield" }}</span>
+                <h3>Firewall Administration</h3>
+                <p>Secure networks with industry-standard next-gen firewalls.</p>
+                <ul class="learn-list">
+                    <li>FortiGate (NSE 1/2/3/4)</li>
+                    <li>Sophos Firewall</li>
+                    <li>SonicWall & pfSense</li>
+                </ul>
+                <div class="program-tags"><span class="tag">FortiGate</span><span class="tag">Sophos</span><span class="tag">SonicWall</span></div>
+            </div>
+            <div class="card program-card reveal">
+                <span class="card-icon">{{ partial "icon" "monitor" }}</span>
+                <h3>Windows Server & Microsoft</h3>
+                <p>Administer core Microsoft enterprise environments.</p>
+                <ul class="learn-list">
+                    <li>Windows Server 2019 / 2022</li>
+                    <li>Active Directory</li>
+                    <li>Group Policy & MCSE</li>
+                </ul>
+                <div class="program-tags"><span class="tag">MCSE</span><span class="tag">AD</span><span class="tag">Hyper-V</span></div>
+            </div>
+            <div class="card program-card reveal">
+                <span class="card-icon">{{ partial "icon" "layers" }}</span>
+                <h3>Virtualization</h3>
+                <p>Consolidate and manage enterprise server workloads.</p>
+                <ul class="learn-list">
+                    <li>VMware vSphere</li>
+                    <li>Microsoft Hyper-V</li>
+                    <li>Proxmox VE</li>
+                </ul>
+                <div class="program-tags"><span class="tag">VMware</span><span class="tag">Hyper-V</span><span class="tag">Proxmox</span></div>
+            </div>
+            <div class="card program-card reveal">
+                <span class="card-icon">{{ partial "icon" "terminal" }}</span>
+                <h3>Linux Administration</h3>
+                <p>Master the OS that powers modern servers and cloud.</p>
+                <ul class="learn-list">
+                    <li>Linux Fundamentals</li>
+                    <li>Ubuntu, CentOS / Rocky Linux</li>
+                    <li>Shell Scripting Basics</li>
+                </ul>
+                <div class="program-tags"><span class="tag">Ubuntu</span><span class="tag">Rocky Linux</span><span class="tag">Scripting</span></div>
+            </div>
+            <div class="card program-card reveal">
+                <span class="card-icon">{{ partial "icon" "cloud" }}</span>
+                <h3>Cloud Engineering</h3>
+                <p>Get started with the platforms businesses run on today.</p>
+                <ul class="learn-list">
+                    <li>Microsoft Azure Fundamentals</li>
+                    <li>AWS Cloud Essentials</li>
+                    <li>Cloud Deployment Basics</li>
+                </ul>
+                <div class="program-tags"><span class="tag">Azure</span><span class="tag">AWS</span></div>
+            </div>
+            <div class="card program-card reveal">
+                <span class="card-icon">{{ partial "icon" "lock" }}</span>
+                <h3>Cyber Security</h3>
+                <p>Learn to find and fix security weaknesses.</p>
+                <ul class="learn-list">
+                    <li>Ethical Hacking Basics</li>
+                    <li>SOC Fundamentals & SIEM</li>
+                    <li>Vulnerability Assessment & Pen Testing</li>
+                </ul>
+                <div class="program-tags"><span class="tag">Security</span><span class="tag">SOC</span><span class="tag">SIEM</span></div>
+            </div>
+            <div class="card program-card reveal">
+                <span class="card-icon">{{ partial "icon" "database" }}</span>
+                <h3>Database Administration</h3>
+                <p>Manage and administer production databases.</p>
+                <ul class="learn-list">
+                    <li>SQL Server Administration</li>
+                    <li>MySQL Basics</li>
+                    <li>Backup & Recovery</li>
+                </ul>
+                <div class="program-tags"><span class="tag">SQL Server</span><span class="tag">MySQL</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hands-on / How we train -->
+<section class="section section-alt">
+    <div class="container split">
+        <div class="reveal">
+            <span class="eyebrow">How We Train</span>
+            <h2>100% Practical, Lab-Based Learning</h2>
+            <p>We don't just teach theory — you'll work on live server racks, real networking equipment, and actual firewall and cloud environments throughout the program.</p>
+            <ul class="feature-list">
+                <li>Live hands-on labs on real infrastructure</li>
+                <li>Real-world projects and scenarios</li>
+                <li>Small groups with individual attention</li>
+                <li>Industry-experienced instructors</li>
+            </ul>
+            <div class="mt-2">
+                <a href="{{ "contact/" | relURL }}" class="btn btn-primary btn-lg">Enquire About a Program</a>
+            </div>
+        </div>
+        <div class="service-visual reveal">
+            <span class="card-icon">{{ partial "icon" "cap" }}</span>
+        </div>
+    </div>
+</section>
+
+<!-- Who it's for -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Who It's For</span>
+            <h2>Built for Career & Skill Growth</h2>
+        </div>
+        <div class="grid grid-4 who-grid">
+            <div class="card who-card reveal">
+                <span class="card-icon">{{ partial "icon" "book" }}</span>
+                <h3>Engineering Students</h3>
+                <p>Bridge the gap between academics and real enterprise IT with practical exposure.</p>
+            </div>
+            <div class="card who-card reveal">
+                <span class="card-icon">{{ partial "icon" "monitor" }}</span>
+                <h3>IT Administrators</h3>
+                <p>Upgrade your skills in modern infrastructure, security, and cloud platforms.</p>
+            </div>
+            <div class="card who-card reveal">
+                <span class="card-icon">{{ partial "icon" "briefcase" }}</span>
+                <h3>Career Changers</h3>
+                <p>Enter the IT field with hands-on experience and interview-ready confidence.</p>
+            </div>
+            <div class="card who-card reveal">
+                <span class="card-icon">{{ partial "icon" "building" }}</span>
+                <h3>Corporate Teams</h3>
+                <p>Custom group training to strengthen your organization's technical capabilities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Internship strip -->
+<section class="section section-muted">
+    <div class="container">
+        <div class="internship-bar reveal">
+            <span class="eyebrow">Internships & Live Projects</span>
+            <h2>Real Experience. Real Projects.</h2>
+            <p>Choose a duration that fits your schedule — <strong>45 Days</strong> | <strong>2 Months</strong> | <strong>3 Months</strong> | <strong>6 Months</strong>. Every internship is <em>100% practical</em>, built around live projects with placement assistance.</p>
+            <a href="{{ "contact/" | relURL }}" class="btn btn-primary btn-lg">Apply for an Internship</a>
+        </div>
+    </div>
+</section>
+
+<!-- Career prep -->
+<section class="section">
+    <div class="container split">
+        <div class="service-visual reveal">
+            <span class="card-icon">{{ partial "icon" "clipboard" }}</span>
+        </div>
+        <div class="reveal">
+            <span class="eyebrow">Career Support</span>
+            <h2>From Training to Your First Job</h2>
+            <p>Training alone isn't enough — we help you present your new skills with confidence.</p>
+            <ul class="feature-list">
+                <li>Resume building and portfolio review</li>
+                <li>Interview preparation and mock interviews</li>
+                <li>Placement assistance and job referrals</li>
+                <li>Guidance on industry certifications</li>
+            </ul>
+            <div class="mt-2">
+                <a href="{{ "contact/" | relURL }}" class="btn btn-primary btn-lg">Start Your Career Path</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA band -->
+<section class="cta-band">
+    <div class="container">
+        <h2>Ready to start learning?</h2>
+        <p>Tell us your goals and experience level — we'll recommend the right program and schedule.</p>
+        <div class="btn-row">
+            <a href="{{ "contact/" | relURL }}" class="btn btn-light btn-lg">Request Training Details</a>
+            <a href="{{ "services/" | relURL }}" class="btn btn-ghost-light btn-lg">Explore Our Services</a>
+        </div>
+    </div>
+</section>
+{{ end }}

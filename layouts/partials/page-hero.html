@@ -1,0 +1,13 @@
+{{ $ctx := . }}
+<section class="page-hero">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="{{ "/" | relURL }}">Home</a>
+            <span>›</span>
+            <span>{{ $ctx.title }}</span>
+        </nav>
+        <span class="eyebrow">{{ $ctx.eyebrow }}</span>
+        <h1>{{ $ctx.title }}</h1>
+        <p class="page-hero-sub">{{ $ctx.subtitle }}</p>
+    </div>
+</section>

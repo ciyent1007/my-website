@@ -1,34 +1,176 @@
 {{ define "main" }}
+<!-- Hero Section -->
 <section class="hero">
-    <div class="container text-center">
-        <h1>Technology That Works. Solutions That Grow.</h1>
-        <p>Expert IT Infrastructure, Cloud Backup, and Network Security Services for modern businesses in Delhi NCR.</p>
+    <div class="container hero-content">
+        <span class="eyebrow">Your Trusted Technology Partner</span>
+        <h1>IT Infrastructure, Managed Support & Corporate Solutions</h1>
+        <p class="hero-lead">CIYENT TECHNOLOGIES delivers end-to-end IT solutions, robust network security, enterprise cloud deployments, and industry-aligned IT training to keep your business operating securely and efficiently.</p>
         <div class="hero-ctas">
-            <a href="/services/" class="btn btn-primary">Explore Services</a>
-            <a href="/contact/" class="btn btn-secondary">Enquire Now</a>
+            <a href="{{ "contact/" | relURL }}" class="btn btn-primary btn-lg">Request a Consultation</a>
+            <a href="{{ "services/" | relURL }}" class="btn btn-ghost-light btn-lg">Explore Services</a>
+        </div>
+        <div class="hero-strip">
+            <span>{{ partial "icon" "shield" }} Enterprise Security</span>
+            <span>{{ partial "icon" "cloud" }} Cloud & Backup</span>
+            <span>{{ partial "icon" "headset" }} 24x7 Support</span>
+            <span>{{ partial "icon" "cap" }} IT Training</span>
         </div>
     </div>
 </section>
 
-<section class="section container">
-    <h2 class="text-center section-title">Our Core Services</h2>
-    <div class="grid cards-grid">
-        <!-- Service Cards -->
-        <div class="card">
-            <h3>IT Infrastructure Solutions</h3>
-            <p>End-to-end setup and maintenance for robust business operations.</p>
-        </div>
-        <div class="card">
-            <h3>Networking & Security</h3>
-            <p>Secure routing, firewall configurations, and cyber threat protection.</p>
-        </div>
-        <div class="card">
-            <h3>Cloud & Backup</h3>
-            <p>Reliable cloud migration and automated data backup solutions.</p>
+<!-- 4 Core Pillars -->
+<section class="pillars-section">
+    <div class="container">
+        <div class="grid grid-4">
+            <div class="pillar-card reveal">
+                <span class="card-icon">{{ partial "icon" "users" }}</span>
+                <h3>Expert Team</h3>
+                <p>Certified & experienced IT professionals dedicated to your setup.</p>
+            </div>
+            <div class="pillar-card reveal">
+                <span class="card-icon">{{ partial "icon" "compass" }}</span>
+                <h3>Custom Solutions</h3>
+                <p>Tailored infrastructure and software suited to your specific business needs.</p>
+            </div>
+            <div class="pillar-card reveal">
+                <span class="card-icon">{{ partial "icon" "headset" }}</span>
+                <h3>Reliable Support</h3>
+                <p>Onsite & remote 24x7 helpdesk and proactive system management.</p>
+            </div>
+            <div class="pillar-card reveal">
+                <span class="card-icon">{{ partial "icon" "growth" }}</span>
+                <h3>Result Driven</h3>
+                <p>Uncompromising focus on uptime, performance, and client growth.</p>
+            </div>
         </div>
     </div>
-    <div class="text-center mt-2">
-        <a href="/services/" class="btn btn-outline">View All Services</a>
+</section>
+
+<!-- Comprehensive IT Services Grid -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">What We Do</span>
+            <h2>End-to-End IT Services</h2>
+            <p>Complete lifecycle management for servers, networks, cloud, and security — designed, deployed, and supported by one team.</p>
+        </div>
+        <div class="grid grid-2">
+            <div class="card service-card reveal">
+                <span class="card-icon">{{ partial "icon" "server" }}</span>
+                <h3>Infrastructure & Servers</h3>
+                <p>Scalable infrastructure design, server deployment, and virtualization to keep your operations running reliably.</p>
+                <ul class="feature-list">
+                    <li>IT Infrastructure Design & Deployment</li>
+                    <li>Server Installation & Management</li>
+                    <li>Windows Server, Active Directory, DNS & DHCP</li>
+                    <li>Virtualization (VMware / Hyper-V / Proxmox)</li>
+                </ul>
+                <a href="{{ "services/" | relURL }}" class="card-link">Learn More {{ partial "icon" "growth" }}</a>
+            </div>
+            <div class="card service-card reveal">
+                <span class="card-icon">{{ partial "icon" "network" }}</span>
+                <h3>Networking & Security</h3>
+                <p>Secure, high-performance networks protected by enterprise-grade firewalls, VPNs, and monitoring.</p>
+                <ul class="feature-list">
+                    <li>Network Design & Structured Cabling</li>
+                    <li>Cisco Switching, Routing & Wi-Fi Solutions</li>
+                    <li>Firewall Deployments (FortiGate, Sophos, SonicWall)</li>
+                    <li>Endpoint, Email Security & VPN (IPSec/SSL)</li>
+                </ul>
+                <a href="{{ "services/" | relURL }}" class="card-link">Learn More {{ partial "icon" "growth" }}</a>
+            </div>
+            <div class="card service-card reveal">
+                <span class="card-icon">{{ partial "icon" "cloud" }}</span>
+                <h3>Cloud & Productivity</h3>
+                <p>Modern collaboration, resilient backups, and cloud migration that scale with your business.</p>
+                <ul class="feature-list">
+                    <li>Microsoft 365 & Google Workspace</li>
+                    <li>Cloud Migration (AWS / Azure)</li>
+                    <li>Data Backup & Disaster Recovery</li>
+                    <li>IP-PBX & VoIP Communications</li>
+                </ul>
+                <a href="{{ "services/" | relURL }}" class="card-link">Learn More {{ partial "icon" "growth" }}</a>
+            </div>
+            <div class="card service-card reveal">
+                <span class="card-icon">{{ partial "icon" "shield" }}</span>
+                <h3>Support & Auditing</h3>
+                <p>Proactive maintenance, security assessments, and dependable day-to-day IT operations.</p>
+                <ul class="feature-list">
+                    <li>Remote & Onsite IT Support</li>
+                    <li>IT Audit & Security Assessments</li>
+                    <li>Hardware Supply & Software Licensing</li>
+                    <li>IT Consultancy & Project Management</li>
+                </ul>
+                <a href="{{ "services/" | relURL }}" class="card-link">Learn More {{ partial "icon" "growth" }}</a>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <a href="{{ "services/" | relURL }}" class="btn btn-outline btn-lg">View All 20+ Service Modules</a>
+        </div>
+    </div>
+</section>
+
+<!-- AMC / CMC Feature Banner -->
+<section class="amc-banner">
+    <div class="container amc-flex">
+        <div class="amc-info reveal">
+            <span class="eyebrow">Managed Support</span>
+            <h2>Annual & Comprehensive Maintenance Contracts (AMC / CMC)</h2>
+            <p>Eliminate IT downtime and unexpected repair overheads with dedicated resident engineers, regular health audits, and priority SLA responses.</p>
+            <ul class="check-list">
+                <li>Preventive Maintenance & Regular Health Checkups</li>
+                <li>Breakdown Support with Guaranteed Priority SLA</li>
+                <li>Full Hardware & Software Operational Support</li>
+            </ul>
+        </div>
+        <div class="amc-action reveal">
+            <div class="highlight-badge">REDUCE DOWNTIME • SAVE COSTS</div>
+            <a href="{{ "contact/" | relURL }}" class="btn btn-light btn-lg">Get an AMC Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- Training Programs Preview -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Training & Careers</span>
+            <h2>Professional IT Training & Internships</h2>
+            <p>Practical, live-project training designed to bridge skill gaps in modern enterprise IT.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="card reveal">
+                <span class="card-icon">{{ partial "icon" "network" }}</span>
+                <h3>Networking & Firewalls</h3>
+                <p>CCNA, Switching, Routing, OSPF, BGP, VLANs, and FortiGate / Sophos / SonicWall / pfSense administration.</p>
+            </div>
+            <div class="card reveal">
+                <span class="card-icon">{{ partial "icon" "monitor" }}</span>
+                <h3>Microsoft & Cloud</h3>
+                <p>Windows Server 2019/2022, Active Directory, Group Policy, MCSE, Azure, and AWS Essentials.</p>
+            </div>
+            <div class="card reveal">
+                <span class="card-icon">{{ partial "icon" "lock" }}</span>
+                <h3>Cybersecurity & Linux</h3>
+                <p>Ethical Hacking, SOC Fundamentals, SIEM, Linux Administration (Ubuntu/Rocky), and Shell Scripting.</p>
+            </div>
+        </div>
+        <div class="internship-bar reveal">
+            <p><strong>Internships & Live Projects:</strong> 45 Days | 2 Months | 3 Months | 6 Months — <em>100% Practical Training with Placement Assistance</em></p>
+            <a href="{{ "training/" | relURL }}" class="btn btn-primary btn-lg">Explore Training Programs</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA band -->
+<section class="cta-band">
+    <div class="container">
+        <h2>Ready to build your IT foundation?</h2>
+        <p>Talk to our team about infrastructure, security, managed support, or training — we'll guide you to the right solution.</p>
+        <div class="btn-row">
+            <a href="{{ "contact/" | relURL }}" class="btn btn-light btn-lg">Request a Consultation</a>
+            <a href="{{ "industries/" | relURL }}" class="btn btn-ghost-light btn-lg">Industries We Serve</a>
+        </div>
     </div>
 </section>
 {{ end }}

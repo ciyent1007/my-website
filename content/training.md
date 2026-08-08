@@ -1,10 +1,5 @@
 ---
-title: "IT Training Programs"
-description: "Professional IT training in CCNA, Windows Server, Linux, Cybersecurity, and Networking Fundamentals."
+title: "Professional IT Training & Career Internships"
+description: "Hands-on IT training in CCNA, Windows Server, Linux, Cybersecurity, Firewalls, AWS, Azure, and Database Administration with live project internships and placement assistance."
+layout: training
 ---
-Equip your team or launch your career with our industry-focused IT training. 
-
-*   **Networking & CCNA:** Networking fundamentals, routing, and switching.
-*   **Systems Administration:** Windows Server & Linux Administration.
-*   **Cybersecurity & Firewalls:** Firewall implementation and network security.
-*   **Hardware & IT Support:** Helpdesk operations and hardware troubleshooting.

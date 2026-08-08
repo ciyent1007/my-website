@@ -1,0 +1,156 @@
+{{ define "main" }}
+{{ partial "page-hero" (dict
+    "title" "About CIYENT TECHNOLOGIES"
+    "eyebrow" "Who We Are"
+    "subtitle" "We're a dedicated IT infrastructure and support company helping businesses in Ghaziabad and Delhi NCR run on technology that works."
+) }}
+
+<!-- Introduction -->
+<section class="section">
+    <div class="container split">
+        <div class="reveal">
+            <span class="eyebrow">Company Introduction</span>
+            <h2>Your Trusted Partner for IT Training, Support & Business Solutions</h2>
+            <p>CIYENT TECHNOLOGIES delivers end-to-end IT solutions with quality training and dependable support. We act as your dedicated IT department — designing, securing, and maintaining the technology your business depends on every day.</p>
+            <p>From infrastructure and networking to cloud, security, and training, our focus is simple: technology that works seamlessly, so you can focus on growing your business.</p>
+        </div>
+        <div class="service-visual reveal">
+            <span class="card-icon">{{ partial "icon" "users" }}</span>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="grid grid-2">
+            <div class="card reveal">
+                <span class="card-icon">{{ partial "icon" "eye" }}</span>
+                <h3>Our Vision</h3>
+                <p>To be a trusted technology partner that empowers businesses across Delhi NCR with reliable, secure, and scalable IT — helping them grow and stay ahead in the digital world.</p>
+            </div>
+            <div class="card reveal">
+                <span class="card-icon">{{ partial "icon" "target" }}</span>
+                <h3>Our Mission</h3>
+                <p>To provide technology that works seamlessly and solutions that grow our clients' businesses — delivered through quality services, practical training, and dependable 24x7 support.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Core Values -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">What We Stand For</span>
+            <h2>Our Core Values</h2>
+        </div>
+        <div class="grid grid-4">
+            <div class="card value-card reveal">
+                <span class="card-icon">{{ partial "icon" "users" }}</span>
+                <h3>Expert Team</h3>
+                <p>Certified, experienced professionals who take ownership of your IT.</p>
+            </div>
+            <div class="card value-card reveal">
+                <span class="card-icon">{{ partial "icon" "compass" }}</span>
+                <h3>Custom Solutions</h3>
+                <p>Tailored solutions built around your business needs — not templates.</p>
+            </div>
+            <div class="card value-card reveal">
+                <span class="card-icon">{{ partial "icon" "headset" }}</span>
+                <h3>Reliable Support</h3>
+                <p>Onsite & remote 24x7 support that's there when you need it.</p>
+            </div>
+            <div class="card value-card reveal">
+                <span class="card-icon">{{ partial "icon" "growth" }}</span>
+                <h3>Result Driven</h3>
+                <p>A focus on quality and client success in everything we deliver.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Approach -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">How We Work</span>
+            <h2>Our Approach</h2>
+            <p>A clear, consultative process from first conversation to ongoing support.</p>
+        </div>
+        <div class="steps">
+            <div class="step reveal">
+                <span class="step-num">1</span>
+                <div>
+                    <h3>Understand</h3>
+                    <p>We start by understanding your business, operations, and current IT environment.</p>
+                </div>
+            </div>
+            <div class="step reveal">
+                <span class="step-num">2</span>
+                <div>
+                    <h3>Assess & Plan</h3>
+                    <p>We audit your systems and design a practical roadmap — from quick wins to long-term improvements.</p>
+                </div>
+            </div>
+            <div class="step reveal">
+                <span class="step-num">3</span>
+                <div>
+                    <h3>Implement</h3>
+                    <p>Our team deploys infrastructure, security, cloud, and support services with minimal disruption.</p>
+                </div>
+            </div>
+            <div class="step reveal">
+                <span class="step-num">4</span>
+                <div>
+                    <h3>Support & Improve</h3>
+                    <p>Ongoing monitoring, maintenance, and optimization keep your technology working — and improving.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">The Difference</span>
+            <h2>Why Businesses Choose CIYENT</h2>
+        </div>
+        <div class="grid grid-2">
+            <div class="card why-card reveal">
+                <span class="card-icon">{{ partial "icon" "shield" }}</span>
+                <div>
+                    <h3>Security-First Approach</h3>
+                    <p>Every deployment is built with protection in mind — from firewalls and VPNs to endpoint and email security.</p>
+                </div>
+            </div>
+            <div class="card why-card reveal">
+                <span class="card-icon">{{ partial "icon" "zap" }}</span>
+                <div>
+                    <h3>Fast, Dependable Response</h3>
+                    <p>Priority SLA responses and resident engineer options keep downtime to a minimum.</p>
+                </div>
+            </div>
+            <div class="card why-card reveal">
+                <span class="card-icon">{{ partial "icon" "file" }}</span>
+                <div>
+                    <h3>One Team, Every Layer</h3>
+                    <p>Infrastructure, networking, cloud, security, and training under one roof — no juggling multiple vendors.</p>
+                </div>
+            </div>
+            <div class="card why-card reveal">
+                <span class="card-icon">{{ partial "icon" "growth" }}</span>
+                <div>
+                    <h3>Practical & Cost-Effective</h3>
+                    <p>Solutions sized to your business — cost-effective, scalable, and focused on real outcomes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <a href="{{ "contact/" | relURL }}" class="btn btn-primary btn-lg">Work With Us</a>
+        </div>
+    </div>
+</section>
+{{ end }}

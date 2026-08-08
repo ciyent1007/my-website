@@ -1,10 +1,13 @@
 {{ define "main" }}
-<div class="page-header">
-    <div class="container">
-        <h1>{{ .Title }}</h1>
+{{ $subtitle := default "CIYENT TECHNOLOGIES" .Description }}
+{{ partial "page-hero" (dict
+    "title" .Title
+    "eyebrow" .Type
+    "subtitle" $subtitle
+) }}
+<section class="section">
+    <div class="container content-body">
+        {{ .Content }}
     </div>
-</div>
-<section class="section container content-body">
-    {{ .Content }}
 </section>
 {{ end }}
