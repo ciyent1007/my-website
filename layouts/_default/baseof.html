@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    {{ partial "header.html" . }}
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+    {{ $script := resources.Get "js/main.js" | minify | fingerprint }}
+    <script src="{{ $script.RelPermalink }}" defer></script>
+</body>
+</html>

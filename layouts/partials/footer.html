@@ -1,0 +1,25 @@
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h4>CIYENT TECHNOLOGIES</h4>
+            <p>{{ .Site.Params.tagline }}</p>
+            <p>Providing professional IT support in Ghaziabad and Delhi NCR.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/services/">IT Infrastructure Services</a></li>
+                <li><a href="/training/">Networking Training</a></li>
+                <li><a href="/industries/">Industries We Serve</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+            <p>Phone: <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom text-center container">
+        <p>&copy; {{ now.Year }} CIYENT TECHNOLOGIES. All rights reserved.</p>
+    </div>
+</footer>

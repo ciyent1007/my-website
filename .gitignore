@@ -1,0 +1,36 @@
+# Hugo build output
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Environment & local variables
+.env
+.env.*
+!.env.example
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor folders/files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node dependencies (if using PostCSS/Tailwind or asset processing packages in the future)
+/node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Temporary & Log files
+*.log
+.cache/

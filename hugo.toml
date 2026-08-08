@@ -1,0 +1,19 @@
+baseURL = "https://ciyent.com"
+languageCode = "en-us"
+title = "CIYENT TECHNOLOGIES | IT Infrastructure & Support"
+enableRobotsTXT = true
+
+[params]
+  description = "CIYENT TECHNOLOGIES offers expert IT infrastructure services, networking, cloud backup, CCTV, and cybersecurity solutions in Ghaziabad and Delhi NCR. Technology That Works. Solutions That Grow."
+  author = "CIYENT TECHNOLOGIES"
+  email = "support@ciyent.com"
+  phone = "+91 87968 59107"
+  tagline = "Technology That Works. Solutions That Grow."
+
+[markup.goldmark.renderer]
+  unsafe = true # Allows raw HTML in markdown (useful for the contact form)
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
