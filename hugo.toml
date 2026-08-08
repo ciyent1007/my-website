@@ -10,6 +10,7 @@ enableRobotsTXT = true
   phone = "+91 87968 59107"
   tagline = "Technology That Works. Solutions That Grow."
   contactEndpoint = "https://ciyent-contact.ciyent.workers.dev"
+  googleAnalyticsId = "G-LGTML9E7F4"
 
 [markup.goldmark.renderer]
   unsafe = true # Allows raw HTML in markdown (useful for the contact form)

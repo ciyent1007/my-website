@@ -122,6 +122,12 @@ document.documentElement.classList.add('js');
                 });
                 const data = await res.json().catch(() => ({}));
                 if (res.ok && data.ok) {
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'generate_lead', {
+                            event_category: 'contact_form',
+                            event_label: 'Enquiry submitted',
+                        });
+                    }
                     setStatus('Thank you! Your enquiry has been sent. We will get back to you within one business day.', 'success');
                     contactForm.reset();
                     Object.keys(fieldErrors).forEach((key) => setFieldError(key, ''));

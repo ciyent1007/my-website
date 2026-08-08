@@ -20,6 +20,17 @@
 <meta property="og:site_name" content="CIYENT TECHNOLOGIES">
 <meta name="twitter:card" content="summary_large_image">
 
+<!-- Analytics -->
+{{ with .Site.Params.googleAnalyticsId }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ . }}');
+</script>
+{{ end }}
+
 <!-- CSS -->
 {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
