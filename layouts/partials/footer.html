@@ -5,6 +5,17 @@
                 <img src="{{ "images/logo.png" | relURL }}" alt="CIYENT TECHNOLOGIES" class="footer-logo" width="843" height="292">
                 <p>{{ .Site.Params.tagline }}</p>
                 <p>Professional IT infrastructure, support, and training services in Ghaziabad and Delhi NCR.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/ciyent-technologies/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                        {{ partial "social-icon" "linkedin" }}
+                    </a>
+                    <a href="https://www.facebook.com/AkashCiyent/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                        {{ partial "social-icon" "facebook" }}
+                    </a>
+                    <a href="https://wa.me/{{ .Site.Params.phone | replaceRE "[^0-9]" "" }}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+                        {{ partial "social-icon" "whatsapp" }}
+                    </a>
+                </div>
             </div>
             <div class="footer-col">
                 <h4>Company</h4>
