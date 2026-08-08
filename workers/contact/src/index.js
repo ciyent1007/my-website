@@ -63,15 +63,19 @@ function validate(payload) {
 export default {
     async fetch(request, env) {
         const cors = corsHeaders(request);
-        const origin = request.headers.get('Origin');
-        const allowedOrigin = env.ALLOWED_ORIGIN || 'https://ciyent.com';
-        if (origin && origin !== allowedOrigin && !allowedOrigin.split(',').map((s) => s.trim()).includes(origin)) {
-            return json({ ok: false, error: 'Origin not allowed.' }, 403, cors);
-        }
 
         if (request.method === 'OPTIONS') {
             return new Response(null, { status: 204, headers: cors });
         }
+
+        const origin = request.headers.get('Origin');
+        const allowedOrigin = env.ALLOWED_ORIGIN || 'https://ciyent.com';
+        const allowed = allowedOrigin.split(',').map((s) => s.trim());
+        const isLocal = /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin || '');
+        if (origin && !isLocal && !allowed.includes(origin)) {
+            return json({ ok: false, error: 'Origin not allowed.' }, 403, cors);
+        }
+
         if (request.method !== 'POST') {
             return json({ ok: false, error: 'Method not allowed.' }, 405, cors);
         }
