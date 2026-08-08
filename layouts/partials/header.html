@@ -1,15 +1,15 @@
 <header class="site-header">
     <div class="container nav-container">
-        <a href="/" class="logo"><strong>CIYENT</strong> TECHNOLOGIES</a>
+        <a href="{{ "/" | relURL }}" class="logo"><strong>CIYENT</strong> TECHNOLOGIES</a>
         <nav class="main-nav">
             <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/">About Us</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/training/">IT Training</a></li>
-                <li><a href="/industries/">Industries</a></li>
+                <li><a href="{{ "/" | relURL }}">Home</a></li>
+                <li><a href="{{ "about/" | relURL }}">About Us</a></li>
+                <li><a href="{{ "services/" | relURL }}">Services</a></li>
+                <li><a href="{{ "training/" | relURL }}">IT Training</a></li>
+                <li><a href="{{ "industries/" | relURL }}">Industries</a></li>
             </ul>
-            <a href="/contact/" class="btn btn-primary">Request a Consultation</a>
+            <a href="{{ "contact/" | relURL }}" class="btn btn-primary">Request a Consultation</a>
         </nav>
         <button class="mobile-menu-toggle" aria-label="Toggle Menu">☰</button>
     </div>
