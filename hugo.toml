@@ -9,6 +9,7 @@ enableRobotsTXT = true
   email = "support@ciyent.com"
   phone = "+91 87968 59107"
   tagline = "Technology That Works. Solutions That Grow."
+  contactEndpoint = "https://ciyent-contact.ciyent.workers.dev"
 
 [markup.goldmark.renderer]
   unsafe = true # Allows raw HTML in markdown (useful for the contact form)

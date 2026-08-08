@@ -127,7 +127,7 @@ ul { list-style: none; }
 .nav-container { display: flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 84px; }
 .logo-link { display: inline-flex; align-items: center; flex-shrink: 0; }
 .site-logo {
-    height: 84px;
+    height: 64px;
     width: auto;
     display: block;
     transition: var(--transition);
@@ -651,6 +651,14 @@ ul { list-style: none; }
 }
 .form-group textarea { resize: vertical; min-height: 130px; }
 .form-note { font-size: 0.82rem; color: var(--text); opacity: 0.85; }
+.form-group.has-error input,
+.form-group.has-error textarea { border-color: var(--danger, #dc2626); box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12); }
+.field-error { display: block; min-height: 1em; font-size: 0.8rem; color: var(--danger, #dc2626); }
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-status { margin-top: 1rem; padding: 0.85rem 1rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 500; display: none; }
+.form-status.is-success { display: block; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.4); color: var(--success, #059669); }
+.form-status.is-error { display: block; background: rgba(220, 38, 38, 0.1); border: 1px solid rgba(220, 38, 38, 0.35); color: var(--danger, #dc2626); }
+.btn[disabled] { opacity: 0.6; cursor: not-allowed; transform: none; }
 .info-side { display: flex; flex-direction: column; gap: 1.5rem; }
 
 /* ---------- Footer ---------- */
@@ -661,7 +669,7 @@ ul { list-style: none; }
     gap: 2.5rem;
     padding-bottom: 3rem;
 }
-.footer-brand .footer-logo { height: 60px; width: auto; display: block; margin-bottom: 1.25rem; }
+.footer-brand .footer-logo { height: 56px; width: auto; display: block; margin-bottom: 1.25rem; }
 .footer-brand p { font-size: 0.93rem; color: #94a3b8; margin-bottom: 0.75rem; }
 .footer-col h4 {
     color: var(--white);
@@ -729,7 +737,7 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 768px) {
-    .site-logo { height: 72px; }
+    .site-logo { height: 52px; }
     .nav-container { min-height: 72px; }
     .mobile-menu-toggle { display: flex; }
     .main-nav {

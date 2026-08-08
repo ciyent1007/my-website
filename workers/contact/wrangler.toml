@@ -1,0 +1,19 @@
+name = "ciyent-contact"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://ciyent.com"
+
+# Rate limiting (optional KV binding)
+# [kv_namespaces]
+# binding = "RATE_COUNTER"
+# id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Secrets (set with `wrangler secret put`):
+# SMTP_HOST    e.g. smtpout.secureserver.net
+# SMTP_PORT    e.g. 465
+# SMTP_USER    e.g. support@ciyent.com
+# SMTP_PASSWORD
+# FROM_EMAIL   (defaults to SMTP_USER)
+# TO_EMAIL     (defaults to SMTP_USER)

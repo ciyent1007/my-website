@@ -1,0 +1,7 @@
+ALLOWED_ORIGIN=http://localhost:1313
+SMTP_HOST=smtpout.secureserver.net
+SMTP_PORT=465
+SMTP_USER=support@ciyent.com
+SMTP_PASSWORD=REPLACE_ME
+FROM_EMAIL=support@ciyent.com
+TO_EMAIL=support@ciyent.com
