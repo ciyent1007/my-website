@@ -25,8 +25,8 @@ jobs:
       HUGO_VERSION: 0.128.0
     steps:
       - name: Checkout
-        # Pinned to actions/checkout@v4.2.2
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        # Pinned to actions/checkout@v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           submodules: recursive
 
@@ -37,8 +37,8 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        # Pinned to actions/configure-pages@v5.0.0
-        uses: actions/configure-pages@983d7736d9b0ae728b41f51b392de50125880c2b
+        # Pinned to actions/configure-pages@v6.0.0
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
 
       - name: Build with Hugo
         run: |
@@ -47,8 +47,8 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
-        # Pinned to actions/upload-pages-artifact@v3.0.1
-        uses: actions/upload-pages-artifact@56af929a73730714b6ff9807f282d8d80f8373b5
+        # Pinned to actions/upload-pages-artifact@v5.0.0
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
         with:
           path: ./public
 
@@ -61,5 +61,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deploy
-        # Pinned to actions/deploy-pages@v4.0.5
-        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
+        # Pinned to actions/deploy-pages@v5.0.0
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128
